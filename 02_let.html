@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - let</title>
+</head>
+<body>
+    
+</body>
+
+
+<script>
+    // São function escoped, ou seja, elas tem um contexto apenas dentro de um escopo, ou são globais não é possível colocar uma variável let com mesmo nome da var, pois ele reconhece que ela já existe anão ser que esteja dentro de um escopo. Ou seja a variável let é muito útil queremos garantir que uma variável mesmo que com já esxita globalmente, ela tenha um comportamento dentro do seu próprio escopo, e asssim garantimos que ela não repasse ou sobreescreva esse valor globalmente, quando for referenciada mesmo que após o escopo, como no exemplo abaixo, no caso a variável tem a impressão de cat primeiramente, depois dog, e depois permanece cat
+    
+    var animal = 'cat';
+    
+    consoloe.log(animal);
+
+    {
+        let animal = 'dog'
+        consoloe.log(animal);
+    }
+
+    consoloe.log(animal);
+
+
+</script>
+
+</html>

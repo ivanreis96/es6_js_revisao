@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Escopo no javscript</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var animal;
+    let sound = 'meow';
+    const name = 'jake';
+
+    function sayAnimal () {
+        var animal = 'cat';
+        console.log(animal)
+    }
+
+    sayAnimal();
+    console.log(animal);
+
+
+    // A questão do escopo no javaScript é sobre uma variável global ela pode ser utilizada por todo o seu código de javascript, mas ao reverenciar uma variável que está apenas dentro de um escopo, como um função por exemplo, e você tentar referenciar ela globalmente, a mesma não será encontrada. Porém é possível ainda assim manipular variáveis globais de forma diferente dentro de um escopo, porém é importante tomar cuidado com o uso desta variável
+
+</script>
+
+</html>
